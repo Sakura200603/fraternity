@@ -1,0 +1,87 @@
+/* stylepage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* 半透明背景 */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 确保在其他内容之上 */
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.back-to-home {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(85, 85, 85, 0.8); /* 半透明背景 */
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.back-to-home:hover {
+    background-color: rgba(119, 119, 119, 0.8); /* 半透明背景 */
+}
+
+main {
+    padding: 80px 20px 20px 20px; /* 增加顶部 padding 以避免内容被遮挡 */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.team-member p {
+    margin: 10px 0;
+    color: #666;
+}
