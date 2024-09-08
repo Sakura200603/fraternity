@@ -1,0 +1,25 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed; /* 固定在页面底部 */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* 使页脚宽度与页面一致 */
+}
+body {
+    min-height: 100vh; /* 视口高度，确保页面足够高 */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* 内容区域扩展填充剩余空间 */
+}
+
+.content-item {
+    /* 其他样式 */
+    padding: 20px; /* 增加内边距 */
+    min-width: 300px; /* 设置最小宽度 */
+}
